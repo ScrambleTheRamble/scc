@@ -614,7 +614,7 @@ def getOutputFilename(srcpath, wantedname, ext, tomenumber):
     if srcpath[-1] == os.path.sep:
         srcpath = srcpath[:-1]
     if 'Ko' in options.profile and options.format == 'EPUB':
-        ext = '.kepub.epub'
+        ext = '.epub'
     if wantedname is not None:
         if wantedname.endswith(ext):
             filename = os.path.abspath(wantedname)
