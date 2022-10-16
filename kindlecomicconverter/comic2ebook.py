@@ -33,6 +33,7 @@ from multiprocessing import Pool
 from uuid import uuid4
 from slugify import slugify as slugifyExt
 from PIL import Image
+Image.MAX_IMAGE_PIXELS = None
 from subprocess import STDOUT, PIPE
 from psutil import Popen, virtual_memory, disk_usage
 from html import escape as hescape
